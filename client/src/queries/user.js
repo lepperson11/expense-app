@@ -30,8 +30,8 @@ const userDelete = async () => {
 };
 
 const useUser = () =>
-  useQuery("user", fetchUser, {
-    refetchOnWindowFocus: false,
+  useQuery("session", fetchUser, {
+    refetchOnWindowFocus: true,
     retry: false,
   });
 

@@ -59,9 +59,9 @@ app.use("/api", authRoutes);
 app.use("/api", userRoutes);
 app.use("/api", transactionRoutes);
 app.use("/api", categoriesRoutes);
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "clientBuild", "index.html"));
-});
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "clientBuild", "index.html"));
+// });
 
 app.listen(port, () => {
   console.log(`SERVER STARTED : ${port}`);
